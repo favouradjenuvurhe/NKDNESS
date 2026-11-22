@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NKDNESS® – Nothing but yourself.</title>
+<meta name="description" content="NKDNESS is a contemporary fashion label built around individuality, simplicity and self-expression. Collection 001: The Nothing Polo. Collection 002: The Nothing Truck Cap.">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:title" content="NKDNESS® – Nothing but yourself.">
+<meta property="og:description" content="Minimal. Confident. Unfiltered. Shop Collection 001 and 002.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Newsreader:ital,wght@0,400;0,500;1,400&display=swap">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Crect width=%27100%27 height=%27100%27 fill=%27black%27/%3E%3Ctext x=%2750%27 y=%2772%27 font-size=%2772%27 text-anchor=%27middle%27 fill=%27white%27 font-family=%27Arial%27%3EN%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body class="atHero">
+<header>
+  <div class="flex items-center gap-5">
+    <button id="logo" aria-label="NKDNESS, home" class="cd font-semibold text-base tracking-wide">NKDNESS®</button>
+    <nav class="nav" aria-label="Main"><a href="#" data-go="index">Index</a><a href="#" data-go="work">Collection</a><a href="#" data-go="info">Story</a><a href="#" data-go="services">Philosophy</a><a href="#" data-go="contact">Contact</a></nav>
+  </div>
+  <div class="flex items-center gap-2">
+    <button class="sb" data-go="search" aria-label="Search"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><span>Search</span><kbd>⌘K</kbd></button>
+    <button class="ib ms" data-go="search" aria-label="Search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button>
+    <button class="ib" data-go="saved" aria-label="Saved items"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M6 4h12v17l-6-4-6 4z"/></svg></button>
+    <button class="ib mb" data-go="menu" aria-label="Menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 8h16M4 16h16"/></svg></button><button class="ib" data-go="cart" aria-label="Cart"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1 12H6zM9 8V6a3 3 0 016 0v2"/></svg><span id="cb">0</span></button>
+  </div>
+</header>
+<div class="seg" role="group" aria-label="View"><button id="vG" aria-pressed="true">Gallery</button><button id="vL" aria-pressed="false">List</button></div>
+
+<div id="stage" aria-label="Project gallery. Drag, scroll or use arrow keys.">
+  <svg id="room" aria-hidden="true"><defs>
+    <linearGradient id="gc" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:var(--c1)"/><stop offset="1" style="stop-color:var(--c2)"/></linearGradient>
+    <linearGradient id="gf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:var(--c2)"/><stop offset="1" style="stop-color:var(--fl)"/></linearGradient></defs>
+    <path id="ceil" fill="url(#gc)"/><path id="floor" fill="url(#gf)"/></svg>
+  <div id="ring"></div>
+</div>
+<p id="hint">Drag or swipe to explore · Tap a piece to open</p>
+<div id="cap"><b id="capT"></b><span id="capS"></span><br><button id="openB">View piece</button></div>
+<section id="hero" aria-label="Introduction"><div class="hp" id="hp" aria-hidden="true"></div><h1>NKDNESS<sup>®</sup></h1><p class="tag">Nothing but yourself.</p><div class="chips"><button data-go="shop">Collection 001 · The Nothing Polo · <s>₦15,000</s> <b>₦13,000</b></button><button data-go="cap">New · Collection 002 · The Nothing Truck Cap · <s>₦10,000</s> <b>₦8,000</b></button></div><p class="lead">A contemporary fashion label built around individuality, simplicity and self-expression.</p><div class="flex flex-wrap gap-3"><button class="btn k" id="enter">Shop now</button><button class="btn" data-go="info">Our story</button></div><p class="mt-7 text-sm" style="color:var(--mute)"><span class="hidden sm:inline">Scroll</span><span class="sm:hidden">Swipe up</span> to enter the gallery</p><p class="mt-2 text-sm"><a class="underline" href="https://wearnkdness.store" target="_blank" rel="noopener">wearnkdness.store</a></p><div class="mq" aria-hidden="true"><div>Nothing but yourself. &nbsp;✦&nbsp; Minimal. Confident. Unfiltered. &nbsp;✦&nbsp; Collection 001 &nbsp;✦&nbsp; Collection 002 &nbsp;✦&nbsp; Nothing but yourself. &nbsp;✦&nbsp; Minimal. Confident. Unfiltered. &nbsp;✦&nbsp; Collection 001 &nbsp;✦&nbsp; Collection 002 &nbsp;✦&nbsp; </div></div></section>
+<div id="list"></div>
+
+<section id="detail" aria-hidden="true" role="dialog" aria-label="Product">
+  <div class="max-w-5xl mx-auto px-5 mb-4"><button id="back" aria-label="Back to gallery"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg><span>Back to gallery</span></button></div>
+  <div class="max-w-5xl mx-auto grid md:grid-cols-[minmax(0,380px)_1fr] gap-8 md:gap-14 px-5 pb-16">
+    <div class="w-full max-w-sm mx-auto md:sticky md:top-24 self-start"><div id="dArt"></div></div>
+    <div class="max-w-lg w-full">
+      <p id="dK" class="cd text-xs" style="color:var(--mute)"></p>
+      <h2 id="dT" class="cd font-semibold text-3xl leading-none mt-1"></h2>
+      <div class="flex gap-4 mt-3 text-xs"><button id="wish" class="underline"><span id="wishT">Save</span></button><button id="share" class="underline">Share</button></div>
+      <div class="flex flex-wrap items-baseline gap-3 mt-4"><span id="dP" class="cd font-semibold text-2xl"></span><s id="dW" class="text-base" style="color:var(--mute)"></s><span id="dS" class="cd text-[10px] px-2 py-1" style="background:var(--ink);color:var(--bg)"></span></div>
+      <p id="dD" class="mt-4 text-[15px] leading-relaxed"></p>
+      <ul id="dL" class="mt-3 text-[14px] space-y-1 list-disc pl-5" style="color:var(--mute)"></ul>
+      <div class="lbl">Colour: <b id="dCn" style="color:var(--ink)"></b></div><div id="oC" class="flex gap-3"></div>
+      <div class="lbl flex justify-between"><span>Size</span><button id="sg" class="underline">Size guide</button></div><div id="oS"></div>
+      <div class="lbl">Quantity</div><div class="qty"><button id="qm" aria-label="Decrease">−</button><span id="qn">1</span><button id="qp" aria-label="Increase">+</button></div>
+      <div class="buyrow"><button id="add" class="btn k w"></button><button id="buy" class="btn w">Buy now</button></div>
+      <div class="mt-4">
+        <details class="acc" open><summary>Details</summary><p class="mt-2" style="color:var(--mute)">Plain, minimal, nothing extra. Part of the NKDNESS® first releases: clean aesthetics and everyday essentials that let your identity speak for itself.</p></details>
+        <details class="acc"><summary>Care</summary><p class="mt-2" style="color:var(--mute)">Wash cold, inside out. Do not bleach. Dry in the shade.</p></details>
+        <details class="acc"><summary>Delivery and returns</summary><p class="mt-2" style="color:var(--mute)">Delivery is confirmed with you after you place your order. For returns or questions, reach us at wearnkdness.store.</p></details>
+      </div>
+    </div>
+  </div>
+  <div class="max-w-5xl mx-auto px-5 pb-24"><h3 class="cd text-sm mb-4">You may also like</h3><div id="more" class="grid grid-cols-3 gap-3 max-w-xl"></div></div>
+</section>
+
+<section id="co" role="dialog" aria-label="Checkout">
+  <div class="co-top"><button id="coBack" class="cd text-sm flex items-center gap-1"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg>Back to cart</button><b class="cd font-semibold">NKDNESS® Checkout</b><span class="w-16"></span></div>
+  <div id="coGrid" class="co-grid">
+    <form id="coForm" novalidate>
+      <h3 class="cd sec !mt-0">Contact</h3>
+      <label class="fl"><span>Email</span><input class="fld" name="email" type="email" autocomplete="email"><em class="er"></em></label>
+      <label class="fl"><span>Phone number</span><input class="fld" name="phone" type="tel" autocomplete="tel" inputmode="tel"><em class="er"></em></label>
+      <h3 class="cd sec">Delivery</h3>
+      <label class="fl"><span>Full name</span><input class="fld" name="name" autocomplete="name"><em class="er"></em></label>
+      <label class="fl"><span>Address</span><input class="fld" name="address" autocomplete="street-address"><em class="er"></em></label>
+      <div class="grid grid-cols-2 gap-3"><label class="fl"><span>City</span><input class="fld" name="city" autocomplete="address-level2"><em class="er"></em></label>
+      <label class="fl"><span>State</span><select class="fld" name="state" id="coState"></select><em class="er"></em></label></div>
+      <label class="fl"><span>Delivery note (optional)</span><input class="fld" name="note"></label>
+      <h3 class="cd sec">Payment</h3>
+      <label class="pay"><input type="radio" name="pay" value="Bank transfer" checked> Bank transfer</label>
+      <label class="pay"><input type="radio" name="pay" value="Card"> Card</label>
+      <label class="pay"><input type="radio" name="pay" value="Pay on delivery"> Pay on delivery</label>
+      <p class="text-xs mt-2" style="color:var(--mute)">We confirm payment details with you after your order is placed.</p>
+      <button type="submit" id="place" class="btn k w mt-6"></button>
+    </form>
+    <aside><h3 class="cd sec !mt-0">Order summary</h3><div id="coSum"></div></aside>
+  </div>
+  <div id="coDone" class="max-w-xl mx-auto px-5 py-16" hidden></div>
+</section>
+<div id="scrim"></div>
+<aside id="drawer" aria-label="Panel"><div class="flex justify-between items-center"><h3 id="drT" class="cd font-semibold text-sm"></h3><button id="drX" class="ib" aria-label="Close panel"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div><div id="drB" class="mt-5 text-[13px] leading-relaxed"></div></aside>
+<div id="cur"></div><div id="pill">View piece</div><div id="toast" role="status"></div>
+
+<script src="js/config.js"></script>
+<script src="js/data.js"></script>
+<script src="js/gallery.js"></script>
+<script src="js/shop.js"></script>
+<script src="js/ui.js"></script>
+</body>
+</html>
